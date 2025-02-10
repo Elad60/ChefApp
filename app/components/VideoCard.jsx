@@ -46,9 +46,10 @@ const VideoCard = ({
       </View>
       {/* Conditional Rendering for Play State */}
       {play ? (
-        <Text>Playing</Text>
+        <Text className="text-white">Playing</Text>
       ) : (
         <TouchableOpacity
+        activeOpacity={0.7}
           className="w-full mt-3 relative justify-center items-center"
           style={{ height: 200 }} // Set height for TouchableOpacity to control the size
           onPress={() => setPlay(true)} // Optionally, toggle play state on press
@@ -57,6 +58,11 @@ const VideoCard = ({
             source={{ uri: thumbnail }}
             className="w-full h-full mt-3 rounded-xl"
             resizeMode="cover"
+          />
+          <Image
+            source={icons.play}
+            className="absolute w-12 h-12"
+            resizeMode="contain"
           />
         </TouchableOpacity>
       )}
