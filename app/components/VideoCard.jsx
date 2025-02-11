@@ -1,6 +1,7 @@
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 import { icons } from "../../constants";
+import VideoScreen from "./VideoScreen";
 
 const VideoCard = ({
   video: {
@@ -46,10 +47,13 @@ const VideoCard = ({
       </View>
       {/* Conditional Rendering for Play State */}
       {play ? (
-        <Text className="text-white">Playing</Text>
+        <VideoScreen
+          video="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+          setPlay={setPlay}
+        />
       ) : (
         <TouchableOpacity
-        activeOpacity={0.7}
+          activeOpacity={0.7}
           className="w-full mt-3 relative justify-center items-center"
           style={{ height: 200 }} // Set height for TouchableOpacity to control the size
           onPress={() => setPlay(true)} // Optionally, toggle play state on press
