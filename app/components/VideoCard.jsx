@@ -48,12 +48,13 @@ const VideoCard = ({
       {/* Conditional Rendering for Play State */}
       {play ? (
         <VideoScreen
-          video="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
-          setPlay={setPlay}
+        video="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+        setPlay={setPlay}
+        otherStyles="w-full h-60 rounded-xl mt-"
         />
       ) : (
         <TouchableOpacity
-          activeOpacity={0.7}
+        activeOpacity={0.7}
           className="w-full mt-3 relative justify-center items-center"
           style={{ height: 200 }} // Set height for TouchableOpacity to control the size
           onPress={() => setPlay(true)} // Optionally, toggle play state on press
