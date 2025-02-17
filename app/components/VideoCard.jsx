@@ -48,7 +48,7 @@ const VideoCard = ({
       {/* Conditional Rendering for Play State */}
       {play ? (
         <VideoScreen
-        video="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+        video={video}
         setPlay={setPlay}
         otherStyles="w-full h-60 rounded-xl mt-"
         />

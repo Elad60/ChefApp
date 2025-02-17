@@ -39,7 +39,7 @@ const TrendingItem = ({ activeItem, item }) => {
     >
       {play ? (
         <VideoScreen 
-        video="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" 
+        video={item.video} 
         setPlay={setPlay}
         />
       ) : (
