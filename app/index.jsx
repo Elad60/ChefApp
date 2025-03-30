@@ -37,7 +37,7 @@ const Welcome = () => {
             <Text className="text-3xl text-white font-bold text-center">
               Discover Endless{"\n"}
               Possibilities with{" "}
-              <Text className="text-secondary-200">Aora</Text>
+              <Text className="text-secondary-200">ChefMatch</Text>
             </Text>
 
             <Image
@@ -46,8 +46,8 @@ const Welcome = () => {
               resizeMode="contain"
             />
           </View>
-          <Text className="text-sm font-pregular text-gray-100 mt-7 text-center">Wheree creativity meets innovation:
-            embark on a journey of limitless exploration with Aora
+          <Text className="text-sm font-pregular text-gray-100 mt-7 text-center">Where creativity meets innovation:
+            embark on a journey of limitless exploration with ChefMatch
           </Text>
           <CustomButton
           title="Continue with Email"

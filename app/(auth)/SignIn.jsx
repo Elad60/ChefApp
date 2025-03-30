@@ -44,7 +44,7 @@ const SignIn = () => {
             resizeMode="contain"
           />
           <Text className="text-2xl text-white text-semibold mt-10 font-psemibold">
-            Login to Aora
+            Login to ChefMatch
           </Text>
           <FormField
             title="Email"
